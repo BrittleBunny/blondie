@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App ☀</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/1efc838a4e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1efc838a4e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <form class="form-row" id="search-form">
+            <div class="col-8">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search city..."
+                id="form-input"
+              />
+            </div>
+            <div class="col-3">
+              <button type="button" class="btn btn-outline-info" id="current-location">
+                Current Location
+              </button>
+            </form>
+          </div>
+          <h1 class="card-title" id="city-country"></h1>
+          <h3 class="card-subtitle mb-2">
+            <span class="current-date" id="todays-date"></span>
+            <br />
+            <span id="weather-type"></span>
+          </h3>
+          <div class="row">
+            <h1 class="card-text col-6">
+              <span id="weather-icon"></span></i> <span id="temperature"></span><span class="fahrenheit-size">°F</span>
+            </h1>
+          
+          <ul class="card-text col-0.5">
+            <li><strong>Humidity: </strong><span id="humidity"></span>%
+            </li>
+            <li><strong>Wind: </strong><span id="wind-speed"></span> mph</li>
+          </ul></div>
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item flex-fill"><span class="future-weather"><strong>Sun</strong><br /><span class="iconify" data-icon="carbon:rain-heavy" data-inline="false"></span><br /><strong><span class="daily-high-temp">77°</span></strong> / 66°</span></li>
+            <li class="list-group-item flex-fill"><span class="future-weather"><strong>Mon</strong> <br /> <span class="iconify" data-icon="carbon:mostly-cloudy" data-inline="false"></span><br /><strong><span class="daily-high-temp">75°</span></strong> / 64°</span></span></li>
+            <li class="list-group-item flex-fill"><span class="future-weather"><strong>Tues</strong><br /><span class="iconify" data-icon="carbon:rain-heavy" data-inline="false"></span><br /><strong><span class="daily-high-temp">72°</span></strong> / 66°</span></span></li>
+            <li class="list-group-item flex-fill"><span class="future-weather"><strong>Wed</strong><br /><span class="iconify" data-icon="wi:cloudy" data-inline="false"></span><br /><strong><span class="daily-high-temp">70°</span></strong> / 66°</span></span></li>
+            <li class="list-group-item flex-fill"><span class="future-weather"><strong>Thu</strong><br /><span class="iconify" data-icon="carbon:rain-heavy" data-inline="false"></span><br /><strong><span class="daily-high-temp">81°</span></strong> / 68°</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
